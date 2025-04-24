@@ -11,8 +11,8 @@
   
   
   <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    const mode = localStorage.getItem("mode"); if (mode) document.documentElement.dataset.mode = mode;
+    const theme = localStorage.getItem("theme"); if (theme) document.documentElement.dataset.theme = theme;
   </script>
   
   <!-- Loaded before other Sphinx assets -->
